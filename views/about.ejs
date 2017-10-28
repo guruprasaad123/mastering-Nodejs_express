@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>
+        About
+    </title>
+<link rel="stylesheet" href="/stylesheets/about.css" />
+</head>
+<body>
+<h1><%= title %></h1>
+<div class="navigation">
+<% include nav/navigation.ejs %>
+</div>
+<h1>
+  <%= data.name %>
+</h1>
+<h2>
+    Goelie
+</h2>
+<table>
+<%data.goalie.forEach(function(goalie_list){ %>
+<%for(let attrib in goalie_list){%>
+    <tr>
+        <td> <%=attrib %> </td><td>:</td><td><%=goalie_list[attrib]%></td>
+    </tr>
+        <% }%>
+<tr>
+    <td>
+    </td>
+</tr>
+<%});%>
+</table>
+<h2>
+    Defence
+</h2>
+<table>
+<%data.defensemen.forEach(function(mens){%>
+<%for( let attrib in mens ){%>
+    <tr>
+<td>
+    <%= attrib %></td><td> : </td> <td> <%= mens[attrib]  %>
+</td>
+    </tr>
+<%}%>
+
+<%});%>
+</table>
+</body>
+</html>

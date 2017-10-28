@@ -1,0 +1,54 @@
+body
+{
+   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: #E3F2FD;
+}
+
+h1
+{
+    padding-top:23px;
+   text-justify: distribute;
+    height:50px;
+   text-align:center;
+    border-top:2px solid steelblue;
+    border-bottom :2px solid steelblue;
+    background-color:#BBDEFB;
+    font: 28px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.navigation{
+
+    background-color:#0D47A1;
+    font:18px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+p{
+    padding : 10px;
+    background-color:#42A5F5;
+
+    font-weight:bolder;
+    font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+
+.para a[href^="http://"]  /* href$=".doc" {} for ending with .doc file */
+{
+    color:#0D47A1;
+   text-decoration: none;
+}
+
+.para
+{
+    height:400px;
+    padding :10px;
+    border : 1px solid #212121;
+}
+
+.para p{
+    line-height:1.5;
+    height: 350px;
+    color:white;
+}

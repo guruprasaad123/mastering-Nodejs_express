@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <h1><%= title %></h1>
+  <div class="navigation">
+<% include nav/navigation.ejs %>
+  </div>
+   <div class="stage" >
+       <div class="para">
+    <p>
+        Welcome to <%= title %> by <a href="http://nodejs.org">Nodejs</a> .
+        A server End technology using Google v8 Engine for its server-side scripting and It uses Non-Blocking I/O .
+        Node.js is a trademark of Joyent, Inc. and is used with its permission. Please review the Trademark Guidelines of the Node.js Foundation.
+        Linux Foundation is a registered trademark of The Linux Foundation.
+        Linux is a registered trademark of Linus Torvalds.
+        Node.js Project Licensing Information.
+           </p>
+       </div>
+   </div>
+  </body>
+</html>
